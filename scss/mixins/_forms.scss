@@ -150,9 +150,7 @@
     }
   }
 
-  .is-focused,
-  // may or may not be a form-group or bmd-form-group
-  &.is-focused {
+  .is-focused {
     // on focus set borders and labels to the validation color
 
     // Use the BS provided mixin for the bulk of the color
@@ -240,16 +238,6 @@
     line-height: $variant-line-height;
   }
 
-  // ^ changing the default line-height to 1 cuts the bottom of the input text off in firefox
-  // this is a known problem in firefox and its recommended to use the default line-height
-  // and use padding to control the layout.  doing this also keeps the computed style height consistent
-  // across browsers
-  input.form-control,
-  input.form-control::placeholder {
-    padding:0.28125rem 0;
-    line-height:1.5;
-  }
-
   .radio label,
   label.radio-inline,
   .checkbox label,
@@ -278,9 +266,7 @@
   }
 
   // floating focused/filled will look like static
-  &.is-focused,
   .is-focused,
-  &.is-filled,
   .is-filled {
     .bmd-label-floating {
       @include bmd-label-static($label-static-top, $static-font-size);
