@@ -36,9 +36,10 @@
   "style": "dist/css/bootstrap-material-design.css",
   "sass": "scss/_core.scss",
   "main": "dist/js/bootstrap-material-design.js",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/FezVrasta/bootstrap-material-design.git"
+    "url": "https://github.com/hastinbe/bootstrap-material-design.git"
   },
   "bugs": {
     "url": "https://github.com/FezVrasta/bootstrap-material-design/issues"
